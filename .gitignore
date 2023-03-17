@@ -7,3 +7,6 @@ node_modules
 # 2. git commit -m "commit message"
 # 3. git push
 
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat

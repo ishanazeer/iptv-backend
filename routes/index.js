@@ -8,6 +8,10 @@ import seasonRoute from "./season/index.js";
 import episodeRoute from "./episode/index.js";
 import streamRoute from "./stream/index.js";
 import fileRoute from "./file/index.js";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 const protectedRouter = express.Router();
 const unProtectedRouter = express.Router();
 

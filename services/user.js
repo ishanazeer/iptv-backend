@@ -120,19 +120,7 @@ const UserService = {
       }
 
       const isVerified = passwordHash.verify(body.password, data.password);
-      /**
-       * smjh lgi? Lag gai hy mein khud bhi 1 or bhi daikhon gi achy se phir clear ho jayega
-       * 
-       * smkh lgi?yes agai
-       * 
-       * we;ll save hash password just in db, but user will send the originnal passowrd
-       * 
-       * so that nobody from the database can understand the password, and could generate the token
-       * 
-       * Only the person who knows the origin password can
-       * 
-       * one more interneesting things
-       */
+    
 
       if (!isVerified) {
         return { message: "failed", data: "Password is wrong" };
